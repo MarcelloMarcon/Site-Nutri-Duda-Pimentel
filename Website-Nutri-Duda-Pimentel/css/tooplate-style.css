@@ -417,6 +417,7 @@ http://www.tooplate.com/view/2106-soft-landing
   .feature-image {
     position: absolute;
     bottom: -27em;
+    right: 0;
   }
 
 
@@ -484,7 +485,21 @@ http://www.tooplate.com/view/2106-soft-landing
     width: 100%;
   }
 
+  .text-about {
+    padding-top: 1em;
+    width: 80%;
+  }
 
+  .container-about {
+    display: flex;
+    padding: 0 100px;
+  }
+
+  .img-about {
+    width:60%;
+    height:40em;
+    padding-right:6em;
+  }
 
   /*---------------------------------------
       TESTIMONIAL           
@@ -507,23 +522,28 @@ http://www.tooplate.com/view/2106-soft-landing
     color: #ffffff;
   }
 
+  #testimonial p {
+    color: #ffffff;
+  }
+
   .testimonial-image {
     background: url('../images/Atendimento.JPG') no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 65vh;
+    height: 70vh;
   }
 
   .testimonial-info {
-    background: #202020;
-    padding: 60px;
-    height: 65vh;
+    background: #9f414e;
+    padding: 8px 60px 2px 60px;
+    height: 70vh;
   }
 
-  .testimonial-info h3 {
+  .testimonial-info p {
     color: #d9d9d9;
     font-style: italic;
     margin-top: 5px;
+    font-size: medium;
   }
 
   .testimonial-info .item {
@@ -624,7 +644,7 @@ http://www.tooplate.com/view/2106-soft-landing
     justify-content: space-evenly;
   }
 
-  .contact-container div.boxes{
+  div.boxes{
     width: 50%;
     border: 1px solid #e1e1e1;
     padding-top: 25px;
@@ -634,17 +654,48 @@ http://www.tooplate.com/view/2106-soft-landing
     align-items: center;
   }
 
-  .contact-container div.boxes:hover{
+  div.boxes:hover{
     background: #fcf2f2;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
     transition: all .3s ease;
     cursor: pointer;
   }
 
-  .contact-container div.boxes h3{
+  .boxes:hover .img-contacts {
+    transform: scale(1.08); /* Aumenta a imagem em 20% */
+    transition: transform 0.3s ease-in-out; /* Transição suave */
+  }
+
+  .boxes:hover h3{
+    color: #29ca8e;
+  }
+
+  div.boxes h3{
     margin-top: 15px;
   }
 
+  div.boxes a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-contacts{
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+  }
+
+  .whats-contact{
+    background-color: #2dcd30;
+  }
+
+  .gmail-contact{
+    background-color: #ffd4d4;
+  }
 
   .div-local{
     display: flex;
@@ -692,10 +743,6 @@ http://www.tooplate.com/view/2106-soft-landing
     width: fit-content;
     transition: all 0.3s ease-in-out;
   }
-
-  .wrap-instagram:hover{
-    transform: scale(1.08);
-  }
   
   #contact-form .col-md-12,
   #contact-form .col-md-4 {
@@ -730,8 +777,117 @@ http://www.tooplate.com/view/2106-soft-landing
     background: #29ca8e;
     color: #ffffff;
   }
-  
 
+  .box {
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background: none;
+    animation: updown 1s ease 0.2s infinite;
+    z-index: 99;
+  }
+  
+  .container1 {
+  
+  }
+  
+  .circle {
+    position: relative;
+    background-color: #ef2929;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    padding: 0;
+    top: 40px;
+    border-radius: 50%;
+  }
+  
+  .inner {
+    position: relative;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    padding: 0;
+    top: 40px;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  
+  .highlight {
+    position: relative;
+    width: 119px;
+    height: 120px;
+    margin: auto;
+    padding: 0;
+    z-index: 3;
+    top: -43px;
+    left: 1.3px;
+    border-radius: 50%;
+    border-top: #ff7676 5px solid;
+    transform: rotate(30deg);
+  }
+  
+  .square {
+    position: relative;
+    background-color: #ef2929;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    padding: 0;
+    bottom: 7px;
+    transform: rotate(-45deg);
+    z-index: 2;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .shadow {
+    position: relative;
+    background-color: black;
+    width: 110px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 0;
+    top: -100px;
+    opacity: 0.20;
+    z-index: 0;
+    animation: shadow 1s ease 0.2s infinite;
+  }
+  
+  @keyframes updown {
+      0%   {
+        transform: translateY(0px);
+      }
+  
+      50% {
+        transform: translateY(8px);
+      }
+    
+      100% {
+        transform: translateY(0px);
+      }
+  }
+  
+  @keyframes shadow {
+      0%   {
+        transform: scale(1);
+        opacity: 0.20;
+      }
+  
+      50% {
+        transform: scale(0.95);
+        opacity: 0.28;
+      }
+    
+      100% {
+        transform: scale(1);
+        opacity: 0.20;
+      }
+  }
+  
   /*---------------------------------------
      FOOTER              
   -----------------------------------------*/
@@ -827,17 +983,32 @@ http://www.tooplate.com/view/2106-soft-landing
     footer {
       padding-bottom: 40px;
     }
+
+    .text-about {
+      width: 100%;
+    }
+    
+    .container-about {
+      padding: 0 20px;
+    }
   }
 
 
   @media screen and (max-width: 767px) {
 
+    .container>.navbar-header{margin-left: 55px;}
+
+    .contact-container{
+      flex-direction: column;
+      align-items: center;
+    }
+    
     .section-title {
       padding-bottom: 20px;
     }
 
     .custom-navbar {
-      background: #ffffff;
+      background: #9f414e;
       -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -889,10 +1060,17 @@ http://www.tooplate.com/view/2106-soft-landing
     .testimonial-info {
       padding: 30px;
     }
+
+    .img-about {
+      width: 100%;
+      padding-right: 2em;
+    }
   }
 
 
   @media screen and (max-width: 480px) {
+
+    .container>.navbar-header{margin-left: 55px;}
 
     .online-form input[type="email"],
     .online-form .form-control {
@@ -913,7 +1091,30 @@ http://www.tooplate.com/view/2106-soft-landing
     .testimonial-info {
       height: 65vh;
     }
+
+    .container-about {
+      flex-direction: column;
+    }
+
+    .h3-contact {
+      font-size: medium;
+    }
+
+    .img-about {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .div-text-about {
+      padding-top: 20px;
+    }
+
+    .div-text-about h2 {
+      text-align: center;
+    }
   }
+
+  /* WHATSAPP FLOAT BUTTON */
 
   .cbh-phone{display:block;position:fixed; right: -45px;
     bottom: -50px; visibility:hidden;background-color:transparent;width:200px;height:200px;cursor:pointer;z-index:999;-webkit-backface-visibility:hidden;-webkit-transform:translateZ(0);-webkit-transition:visibility .5s;-moz-transition:visibility .5s;-o-transition:visibility .5s;transition:visibility .5s}
