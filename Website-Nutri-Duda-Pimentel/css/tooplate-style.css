@@ -1105,6 +1105,7 @@ http://www.tooplate.com/view/2106-soft-landing
       margin:0 3em;
       flex-direction: row;
       justify-content: center;
+      gap: 1em;
     }
 
     .feature-image {
