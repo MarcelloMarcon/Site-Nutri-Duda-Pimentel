@@ -1011,12 +1011,126 @@ http://www.tooplate.com/view/2106-soft-landing
   @media only screen and (max-width: 1200px) {
 
     .custom-navbar .navbar-nav {
-      margin-left: 3em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 7em;
+    }
+
+    .parisienne-regular {
+      width: auto;
+    }
+
+    .col-md-offset-3 {
+      margin: 0 7em;
+    }
+
+    .container {
+      margin: 0 1em;
+    }
+
+    .container-espec {
+      width: auto;
+    }
+
+    .img-about {
+      width: 80%;
+      padding-right: 5em;
+    }
+
+    .text-about {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container-about {
+      display: flex;
+      align-items: center;
+    }
+
+    .custom-navbar {
+      display: flex;
+      justify-content: center;
+    }
+
+    .width-text {
+      width: 84%;
+    }
+
+    .benefit-box{
+      width: 24%;
+    }
+
+    #home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .home-info {
-      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 4em auto;
+      width: 155%;
+      max-width: 1200px;
     }
+
+    .section-title {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .nav-tabs {
+      width: 105%;
+      margin-left: 5em;
+    }
+
+    .tab-pane-item {
+      width: 100%;
+      margin-left: 5em;
+    }
+
+    .specialitie-image {
+      margin-right: 5em;
+    }
+
+    .benefit-box {
+      width: 30%;
+    }
+    .container-benefits {
+      margin:0 3em;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .feature-image {
+      margin-right: 5em;
+    }
+
+    .testimonial-image {
+      width: 100%;
+    }
+
+    .row {
+      margin: 0 6em;
+    }
+
+    .row-atend{
+      margin: 0 1em;
+    }
+
+    .contact-container{
+      margin: 0 3em;
+    }
+
+    #footer{
+      margin-left: 7em;
+    }
+
   }
 
 
